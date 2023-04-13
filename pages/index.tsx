@@ -196,6 +196,7 @@ const IndexPage = () => {
     }
   }, []);
   const forceUpdate = useForceUpdate();
+  const [balance, setBalance] = useState(0);
 
   return (
     <Box sx={{ width: "100vw" }}>
@@ -430,12 +431,14 @@ const IndexPage = () => {
             ml={10}
             color="violet"
             onClick={() => {
-              const balance =
+              const newBalance =
                 bitcoinBlockchain.getBalanceForAddress(myWalletAddress);
+              setBalance(newBalance);
             }}
           >
             Get my balance
           </Button>
+          {balance ? <Text>Balance: {balance}</Text> : null}
         </Box>
       )}
     </Box>
