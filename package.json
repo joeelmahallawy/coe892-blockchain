@@ -20,6 +20,7 @@
     "@mantine/prism": "^6.0.7",
     "@mantine/spotlight": "^6.0.7",
     "@mantine/tiptap": "^6.0.7",
+    "@prisma/client": "4.12.0",
     "@tabler/icons-react": "^2.15.0",
     "@tiptap/extension-link": "^2.0.2",
     "@tiptap/react": "^2.0.2",
@@ -31,6 +32,7 @@
     "grant": "^5.4.21",
     "jsonwebtoken": "^9.0.0",
     "next": "latest",
+    "prisma": "^4.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

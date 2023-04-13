@@ -1,4 +1,4 @@
 export const getEnvironmentWebsiteURL = () =>
   process.env.NODE_ENV === "production"
-    ? `http://localhost:3000`
+    ? `https://coe892-blockchain.vercel.app`
     : `http://localhost:3000`;
